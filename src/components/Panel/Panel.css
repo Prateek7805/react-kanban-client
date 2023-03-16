@@ -1,0 +1,70 @@
+:root{
+    --dropToDoBg: 58, 152, 185;
+    --dropInProgressBg: 247, 192, 74;
+    --dropDoneBg: 83, 145, 101;
+
+    --dropToDoClr: #ffffff;
+    --dropInProgressClr: #000000;
+    --dropDoneClr: #ffffff;
+
+    --dropTitleClr: #EEEEEE;
+    --dropBg : rgb(255, 241, 220);
+}
+.panel-body{
+    border-radius: 10px;
+    min-width: 25vw;
+}
+
+.panel-title{
+    width: 100%;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+    padding: 5px;
+}
+.title-toDo{
+    background-color: rgb(var(--dropToDoBg));
+    color: var(--dropToDoClr);
+}
+.title-inProgress{
+    background-color: rgb(var(--dropInProgressBg));
+    color: var(--dropInProgressClr);
+}   
+.title-done{
+    background-color: rgb(var(--dropDoneBg));
+    color: var(--dropDoneClr);
+}
+.droppable-panel{
+    display: flex;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    background-color: var(--dropBg);
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10px 0 10px;
+    border: 1px solid black;
+}
+.droppable-panel-toDo .drag-card {
+    background-color: rgba(var(--dropToDoBg), 0.5);
+}
+.droppable-panel-inProgress .drag-card {
+    background-color: rgba(var(--dropInProgressBg), 0.5);
+}
+.droppable-panel-done .drag-card{
+    background-color: rgba(var(--dropDoneBg), 0.5);
+}
+
+.toDo-card-bg{
+    background-color: rgba(var(--dropToDoBg), 0.5) !important;
+}
+.inProgress-card-bg{
+    background-color: rgba(var(--dropInProgressBg), 0.5) !important;
+}
+.done-card-bg{
+    background-color: rgba(var(--dropDoneBg), 0.5) !important;
+}
+p{
+    margin: 0;
+}

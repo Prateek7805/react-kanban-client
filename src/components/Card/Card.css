@@ -1,0 +1,26 @@
+
+.drag-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+    
+    width: 100%;
+    margin-bottom: 10px;
+}
+.card-actions{
+    display: none;
+}
+.drag-card:hover .card-actions{
+    display: flex;
+}
+.card-actions > span{
+    margin-left: 5px;
+}
+.card-actions > span:hover{
+    cursor: pointer;
+}
