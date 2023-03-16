@@ -1,8 +1,5 @@
 :root{
   --bgColor : #EEEEEE;
-  --sc-width : 10px;
-  --sc-track-color : #444654;
-  --sc-track-hover-color : #797a85;
 }
 body {
   margin: 0;
@@ -13,6 +10,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--bgColor);
   overscroll-behavior: none;
+  
 }
 
 code {
