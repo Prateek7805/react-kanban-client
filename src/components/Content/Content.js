@@ -6,6 +6,7 @@ import _ from 'lodash';
 import './Content.css';
 import { v4 } from 'uuid';
 import { DeleteContext, EditContext } from "../Context/ModalContext";
+import Footer from "../Footer/Footer";
 export default function Content() {
     const [panels, setPanels] = useState({
         "toDo": {
@@ -131,7 +132,7 @@ export default function Content() {
                     </div>
                 </DragDropContext>
             </Container>
-           
+           <Footer/>
             </>
     )
 }

@@ -1,5 +1,6 @@
 .main-container{
     padding: 10px;
+    min-height: 90vh;
 }
 .task-input{
     width: 85%;
