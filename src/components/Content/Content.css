@@ -1,6 +1,11 @@
 .main-container{
     padding: 10px;
-    min-height: 90vh;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right:0;
+    overflow-y: scroll;
+    scroll-behavior: smooth !important;
 }
 .task-input{
     width: 85%;

@@ -8,24 +8,25 @@
   width: calc(100vw - var(--sc-width) -2px);
   min-height: 100vh;
   flex-direction: column;
-}body::-webkit-scrollbar {
+}
+.main-container::-webkit-scrollbar {
   width: var(--sc-width);
 }
 
 /* Track */
-body::-webkit-scrollbar-track {
+.main-container::-webkit-scrollbar-track {
   border-radius: 10px;
 }
  
 /* Handle */
-body::-webkit-scrollbar-thumb {
+.main-container::-webkit-scrollbar-thumb {
   background-color: var(--sc-track-color);
   border-radius: 20px;
   transition: transform 0.3s ease-in-out;
 }
 
 /* Handle on hover */
-body::-webkit-scrollbar-thumb:hover {
+.main-container::-webkit-scrollbar-thumb:hover {
   background: var(--sc-track-hover-color); 
   transform: scale(1.2);
 }
